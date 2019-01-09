@@ -1,0 +1,24 @@
+#!/bin/sh
+ 
+# tip：mv post-commit xxx/.git/hook
+# email：yaojun.dong@geely.com
+# date：2017/05/08
+ 
+#Get Current Branch
+Current_Branch=`git symbolic-ref --short -q HEAD`
+echo $Current_Branch
+ 
+#Get diff.patch
+New_CommitId=`git rev-parse --short HEAD`
+Base_CommitId=`git rev-parse --short HEAD~`
+git diff $Base_CommitId $New_CommitId > diff.patch
+ 
+ 
+#Get Commit Msg
+str=`git log --pretty=format:'%h %s' | grep $New_CommitId`
+CommitMsg=`echo ${str#* }`
+echo $CommitMsg
+ 
+ 
+#rbt post
+rbt post -p -d --tracking-branch=origin/$Current_Branch --diff-filename=diff.patch --summary="$CommitMsg" --description="$CommitMsg"

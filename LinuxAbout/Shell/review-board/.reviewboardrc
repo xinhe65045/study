@@ -1,0 +1,7 @@
+REPOSITORY = "gap-service-tenant"
+REVIEWBOARD_URL = "http://10.86.98.20/"
+USERNAME = "xinhe.sun"
+PASSWORD = "Aa12345678"
+TARGET_GROUPS = "gap2"
+TRACKING_BRANCH = "origin/develop"
+

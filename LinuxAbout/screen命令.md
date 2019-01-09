@@ -1,0 +1,16 @@
+敲入命令screen
+会创建一个跑着shell的单一窗口
+在这里面
+你可以跑你所需要的程序
+然后Ctrl+a d退出刚创建的窗口(回到进入screen前的环境)
+然后再敲入命令screen创建新的终端窗口
+就这样
+你可以建立多个有shell的窗口（这些窗口里都可以跑你自己的应用）
+这样就是你退出远程管理窗口(进入screen的环境)
+你的screen窗间的窗口都不会关闭
+里面跑得应用自然也不会当掉
+用screen -ls可以看所有的screen sessions
+用screen -r sessionid可以进sessionid指定的特定的screen session
+最后screen session不再使用的时候
+screen -r sessionid进去
+exit退出即可

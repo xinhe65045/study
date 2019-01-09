@@ -1,0 +1,2 @@
+/app/evun/dms-next/Notify/notify-service/target/notify-service.jar
+/app/evun/dms-next/DMS-Passport/passport-service/target/dms-passport-service.jar 
