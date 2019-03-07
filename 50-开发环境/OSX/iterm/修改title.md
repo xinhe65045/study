@@ -29,7 +29,3 @@ iTerm2是Mac上最好用的终端app，没有之一。使用终端时往往需�
 
 
 这时再重新链接，就是这样的效果了
-
----------------------
-
-本文来自 忧小雅 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/wencuili/article/details/74923995?utm_source=copy 
